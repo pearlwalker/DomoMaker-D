@@ -32,6 +32,11 @@ const handleSignup = (e) => {
         return false;
     }
 
+    if (pass !== pass2) {
+        helper.handleError('Passwords do not match!');
+        return false;
+    }
+
     helper.sendPost(e.target.action, { username, pass, pass2 });
     return false;
 };
