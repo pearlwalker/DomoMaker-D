@@ -17,3 +17,7 @@ const LoginWindow = (props) => {
 const SignupWindow = (props) => {
 
 };
+
+const init = () => {
+
+};
