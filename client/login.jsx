@@ -21,3 +21,5 @@ const SignupWindow = (props) => {
 const init = () => {
 
 };
+
+window.onload = init;
