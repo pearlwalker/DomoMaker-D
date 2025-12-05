@@ -86,13 +86,15 @@ const init = () => {
     const root = createRoot(document.getElementById('content'));
 
     loginButton.addEventListener('click', (e) => {
-
+        e.preventDefault();
+        root.render( <LoginWindow /> );
+        return false;
     });
 
     signupButton.addEventListener('click', (e) => {
 
     });
-    
+
     root.render(<LoginWindow />);
 };
 
