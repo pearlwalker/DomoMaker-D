@@ -17,6 +17,7 @@ const handleSignup = (e) => {
 
     const username = e.target.querySelector('#user').value;
     const pass = e.target.querySelector('#pass').value;
+    const pass2 = e.target.querySelector('#pass2').value;
 };
 
 const LoginWindow = (props) => {
