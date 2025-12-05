@@ -14,6 +14,9 @@ const handleLogin = (e) => {
         helper.handleError('Username or password is empty!');
         return false;
     }
+
+    helper.sendPost(e.target.action, { username, pass });
+    return false;
 };
 
 const handleSignup = (e) => {
@@ -28,6 +31,9 @@ const handleSignup = (e) => {
         helper.handleError('All fields are required!');
         return false;
     }
+
+    helper.sendPost(e.target.action, { username, pass, pass2 });
+    return false;
 };
 
 const LoginWindow = (props) => {
