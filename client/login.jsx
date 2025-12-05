@@ -11,6 +11,7 @@ const handleLogin = (e) => {
     const pass = e.target.querySelector('#pass').value;
 
     if (!username || !pass) {
+        helper.handleError('Username or password is empty!');
         return false;
     }
 };
@@ -24,6 +25,7 @@ const handleSignup = (e) => {
     const pass2 = e.target.querySelector('#pass2').value;
 
     if (!username || !pass || !pass2) {
+        helper.handleError('All fields are required!');
         return false;
     }
 };
