@@ -87,12 +87,14 @@ const init = () => {
 
     loginButton.addEventListener('click', (e) => {
         e.preventDefault();
-        root.render( <LoginWindow /> );
+        root.render(<LoginWindow />);
         return false;
     });
 
     signupButton.addEventListener('click', (e) => {
-
+        e.preventDefault();
+        root.render(<SignupWindow />);
+        return false;
     });
 
     root.render(<LoginWindow />);
