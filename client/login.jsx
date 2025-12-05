@@ -84,6 +84,8 @@ const init = () => {
     const signupButton = document.getElementById('signupButton');
 
     const root = createRoot(document.getElementById('content'));
+
+    root.render( <LoginWindow /> );
 };
 
 window.onload = init;
