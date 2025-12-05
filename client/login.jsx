@@ -9,3 +9,7 @@ const handleLogin = (e) => {
 const handleSignup = (e) => {
 
 };
+
+const LoginWindow = (props) => {
+
+};
