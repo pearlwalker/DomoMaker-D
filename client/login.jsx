@@ -42,11 +42,21 @@ const handleSignup = (e) => {
 };
 
 const LoginWindow = (props) => {
+    return (
+        <form
+        >
 
+        </form>
+    );
 };
 
 const SignupWindow = (props) => {
+    return (
+        <form
+        >
 
+        </form>
+    );
 };
 
 const init = () => {
