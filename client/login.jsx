@@ -43,7 +43,12 @@ const handleSignup = (e) => {
 
 const LoginWindow = (props) => {
     return (
-        <form
+        <form id="loginForm"
+        name="loginForm"
+        onSubmit={handleLogin}
+        action="/login"
+        method="POST"
+        className="mainForm"
         >
 
         </form>
@@ -52,7 +57,12 @@ const LoginWindow = (props) => {
 
 const SignupWindow = (props) => {
     return (
-        <form
+        <form id="signupForm"
+        name="signupForm"
+        onSubmit={handleSignup}
+        action="/signup"
+        method="POST"
+        className="mainForm"
         >
 
         </form>
