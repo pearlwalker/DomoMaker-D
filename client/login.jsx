@@ -44,11 +44,11 @@ const handleSignup = (e) => {
 const LoginWindow = (props) => {
     return (
         <form id="loginForm"
-        name="loginForm"
-        onSubmit={handleLogin}
-        action="/login"
-        method="POST"
-        className="mainForm"
+            name="loginForm"
+            onSubmit={handleLogin}
+            action="/login"
+            method="POST"
+            className="mainForm"
         >
             <label htmlFor="username">Username: </label>
             <input type="text" id="user" name="username" placeholder="username" />
@@ -62,11 +62,11 @@ const LoginWindow = (props) => {
 const SignupWindow = (props) => {
     return (
         <form id="signupForm"
-        name="signupForm"
-        onSubmit={handleSignup}
-        action="/signup"
-        method="POST"
-        className="mainForm"
+            name="signupForm"
+            onSubmit={handleSignup}
+            action="/signup"
+            method="POST"
+            className="mainForm"
         >
             <label htmlFor="username">Username: </label>
             <input type="text" id="user" name="username" placeholder="username" />
@@ -85,7 +85,15 @@ const init = () => {
 
     const root = createRoot(document.getElementById('content'));
 
-    root.render( <LoginWindow /> );
+    loginButton.addEventListener('click', (e) => {
+
+    });
+
+    signupButton.addEventListener('click', (e) => {
+
+    });
+    
+    root.render(<LoginWindow />);
 };
 
 window.onload = init;
