@@ -5,3 +5,7 @@ const { createRoot } = require('react-dom/client');
 const handleLogin = (e) => {
 
 };
+
+const handleSignup = (e) => {
+
+};
