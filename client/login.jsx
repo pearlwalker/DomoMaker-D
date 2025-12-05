@@ -13,3 +13,7 @@ const handleSignup = (e) => {
 const LoginWindow = (props) => {
 
 };
+
+const SignupWindow = (props) => {
+
+};
