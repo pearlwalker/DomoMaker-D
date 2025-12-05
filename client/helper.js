@@ -27,3 +27,11 @@ const sendPost = async (url, data, handler) => {
     handler(result);
   }
 };
+
+const hideError = () => {
+    
+};
+
+module.exports = {
+    hideError,
+};
