@@ -9,6 +9,10 @@ const handleLogin = (e) => {
 
     const username = e.target.querySelector('#user').value;
     const pass = e.target.querySelector('#pass').value;
+
+    if (!username || !pass) {
+        return false;
+    }
 };
 
 const handleSignup = (e) => {
@@ -18,6 +22,10 @@ const handleSignup = (e) => {
     const username = e.target.querySelector('#user').value;
     const pass = e.target.querySelector('#pass').value;
     const pass2 = e.target.querySelector('#pass2').value;
+
+    if (!username || !pass || !pass2) {
+        return false;
+    }
 };
 
 const LoginWindow = (props) => {
