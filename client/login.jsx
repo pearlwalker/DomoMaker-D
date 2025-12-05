@@ -82,6 +82,8 @@ const SignupWindow = (props) => {
 const init = () => {
     const loginButton = document.getElementById('loginButton');
     const signupButton = document.getElementById('signupButton');
+
+    const root = createRoot(document.getElementById('content'));
 };
 
 window.onload = init;
