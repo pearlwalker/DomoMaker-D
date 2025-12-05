@@ -3,7 +3,7 @@ const handleError = (message) => {
     document.getElementById('domoMessage').classList.remove('hidden');
 };
 
-const sendPost = async (url, data) => {
+const sendPost = async (url, data, handler) => {
   const response = await fetch(url, {
     method: 'POST',
     headers: {
