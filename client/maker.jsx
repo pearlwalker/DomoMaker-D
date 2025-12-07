@@ -6,3 +6,7 @@ const { createRoot } = require('react-dom/client');
 const handleDomo = (e, onDomoAdded) => {
 
 };
+
+const DomoForm = (props) => {
+
+};
