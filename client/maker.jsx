@@ -53,6 +53,8 @@ const DomoList = (props) => {
         return (
             <div key={domo.id} className="domo" >
                 <img src="/assets/img/domoface.jpeg" alt="Domo face" className="domoFace" />
+                <h3 className="domoName">Name: {domo.name}</h3>
+                <h3 className="domoAge">Age: {domo.age}</h3>
             </div>
         );
     });
