@@ -20,3 +20,9 @@ const DomoList = (props) => {
 const App = () => {
 
 };
+
+const init = () => {
+
+};
+
+window.onload = init;
