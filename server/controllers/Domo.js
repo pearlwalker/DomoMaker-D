@@ -3,7 +3,7 @@ const models = require('../models');
 const { Domo } = models;
 
 const makerPage = async (req, res) => {
-
+  return res.render('app');
 };
 
 const makeDomo = async (req, res) => {
