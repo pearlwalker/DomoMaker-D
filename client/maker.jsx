@@ -20,7 +20,17 @@ const handleDomo = (e, onDomoAdded) => {
 };
 
 const DomoForm = (props) => {
-
+    return (
+        <form
+        name="domoForm"
+        onSubmit={(e) => handleDomo(e, props.triggerReload)}
+        method="POST"
+        className="domoForm"
+        action="/maker"
+        id="domoForm"
+        >
+        </form>
+    );
 };
 
 const DomoList = (props) => {
