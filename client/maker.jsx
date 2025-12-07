@@ -46,7 +46,8 @@ const DomoList = (props) => {
             const response = await fetch('/getDomos');
             const data = await response.json();
             setDomos(data.domos);
-        }
+        };
+        loadDomosFromServer();
     })
     const domoNodes = domos.map(domo => {
 
