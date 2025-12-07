@@ -31,7 +31,11 @@ const makeDomo = async (req, res) => {
 };
 
 const getDomos = async (req, res) => {
+  try {
 
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 module.exports = {
