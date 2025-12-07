@@ -12,9 +12,7 @@ const DomoForm = (props) => {
 };
 
 const DomoList = (props) => {
+    const domoNodes = domos.map(domo => {
 
+    });
 };
-
-const domoNodes = domos.map(domo => {
-
-});
