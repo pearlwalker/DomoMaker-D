@@ -50,7 +50,7 @@ const DomoList = (props) => {
         loadDomosFromServer();
     }, [props.reloadDomos]);
 
-    if(domos.length === 0) {
+    if (domos.length === 0) {
         return (
             <div className="domoList">
                 <h3 className="emptyDomo">No Domos Yet!</h3>
@@ -74,15 +74,15 @@ const DomoList = (props) => {
 };
 
 const App = () => {
-    const [ reloadDomos, setReloadDomos ] = useState(false);
+    const [reloadDomos, setReloadDomos] = useState(false);
 
     return (
         <div>
             <div id="makeDomo">
-                
+                <DomoForm triggerReload={() => setReloadDomos(!reloadDomos)} />
             </div>
             <div id="domos">
-
+                <DomoList domos={[]} reloadDomos={reloadDomos} />
             </div>
         </div>
     );
