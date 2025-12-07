@@ -10,7 +10,7 @@ const handleDomo = (e, onDomoAdded) => {
     const name = e.target.querySelector('#domoName').value;
     const age = e.target.querySelector('#domoAge').value;
 
-    if(!name || !age) {
+    if (!name || !age) {
         helper.handleError('All fields are required!');
         return false;
     }
@@ -22,13 +22,15 @@ const handleDomo = (e, onDomoAdded) => {
 const DomoForm = (props) => {
     return (
         <form
-        name="domoForm"
-        onSubmit={(e) => handleDomo(e, props.triggerReload)}
-        method="POST"
-        className="domoForm"
-        action="/maker"
-        id="domoForm"
+            name="domoForm"
+            onSubmit={(e) => handleDomo(e, props.triggerReload)}
+            method="POST"
+            className="domoForm"
+            action="/maker"
+            id="domoForm"
         >
+            <label htmlFor="name">Name: </label>
+            <input type="text" name="name" id="domoName" placeholder="Domo Name" />
         </form>
     );
 };
