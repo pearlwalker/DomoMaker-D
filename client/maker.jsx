@@ -14,3 +14,7 @@ const DomoForm = (props) => {
 const DomoList = (props) => {
 
 };
+
+const domoNodes = domos.map(domo => {
+
+});
