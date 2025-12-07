@@ -14,6 +14,9 @@ const handleDomo = (e, onDomoAdded) => {
         helper.handleError('All fields are required!');
         return false;
     }
+
+    helper.sendPost(e.target.action, { name, age }, onDomoAdded);
+    return false;
 };
 
 const DomoForm = (props) => {
