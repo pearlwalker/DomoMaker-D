@@ -43,7 +43,7 @@ const DomoList = (props) => {
 
     useEffect(() => {
         const loadDomosFromServer = async () => {
-            
+            const response = await fetch('/getDomos');
         }
     })
     const domoNodes = domos.map(domo => {
