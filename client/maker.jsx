@@ -39,6 +39,7 @@ const DomoForm = (props) => {
 };
 
 const DomoList = (props) => {
+    const [domos, setDomos] = useState(props.domos);
     const domoNodes = domos.map(domo => {
 
     });
