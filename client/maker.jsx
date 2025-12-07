@@ -49,6 +49,14 @@ const DomoList = (props) => {
         };
         loadDomosFromServer();
     }, [props.reloadDomos]);
+
+    if(domos.length === 0) {
+        return (
+            <div className="domoList">
+                <h3 className="emptyDomo">No Domos Yet!</h3>
+            </div>
+        )
+    }
     const domoNodes = domos.map(domo => {
         return (
             <div key={domo.id} className="domo" >
@@ -58,7 +66,6 @@ const DomoList = (props) => {
             </div>
         );
     });
-
     return (
         <div className="domoList">
             {domoNodes}
