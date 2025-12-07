@@ -16,3 +16,7 @@ const DomoList = (props) => {
 
     });
 };
+
+const App = () => {
+
+};
