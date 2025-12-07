@@ -48,7 +48,7 @@ const DomoList = (props) => {
             setDomos(data.domos);
         };
         loadDomosFromServer();
-    })
+    }, [props.reloadDomos]);
     const domoNodes = domos.map(domo => {
 
     });
