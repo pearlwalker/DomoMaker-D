@@ -2,9 +2,7 @@ const models = require('../models');
 
 const { Domo } = models;
 
-const makerPage = async (req, res) => {
-  return res.render('app');
-};
+const makerPage = async (req, res) => res.render('app');
 
 const makeDomo = async (req, res) => {
   if (!req.body.name || !req.body.age) {
