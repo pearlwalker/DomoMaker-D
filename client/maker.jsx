@@ -58,6 +58,12 @@ const DomoList = (props) => {
             </div>
         );
     });
+
+    return (
+        <div className="domoList">
+            {domoNodes}
+        </div>
+    );
 };
 
 const App = () => {
