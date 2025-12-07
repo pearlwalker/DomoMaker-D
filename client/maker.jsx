@@ -50,7 +50,11 @@ const DomoList = (props) => {
         loadDomosFromServer();
     }, [props.reloadDomos]);
     const domoNodes = domos.map(domo => {
+        return (
+            <div key={ domo.id } className="domo" >
 
+            </div>
+        );
     });
 };
 
