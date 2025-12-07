@@ -10,3 +10,7 @@ const handleDomo = (e, onDomoAdded) => {
 const DomoForm = (props) => {
 
 };
+
+const DomoList = (props) => {
+
+};
