@@ -9,6 +9,11 @@ const handleDomo = (e, onDomoAdded) => {
 
     const name = e.target.querySelector('#domoName').value;
     const age = e.target.querySelector('#domoAge').value;
+
+    if(!name || !age) {
+        helper.handleError('All fields are required!');
+        return false;
+    }
 };
 
 const DomoForm = (props) => {
