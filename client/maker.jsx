@@ -41,7 +41,11 @@ const DomoForm = (props) => {
 const DomoList = (props) => {
     const [domos, setDomos] = useState(props.domos);
 
-    useEffect(() => {})
+    useEffect(() => {
+        const loadDomosFromServer = async () => {
+            
+        }
+    })
     const domoNodes = domos.map(domo => {
 
     });
