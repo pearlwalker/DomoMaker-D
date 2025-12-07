@@ -89,7 +89,7 @@ const App = () => {
 };
 
 const init = () => {
-
+    const root = createRoot(document.getElementById('app'));
 };
 
 window.onload = init;
