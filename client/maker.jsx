@@ -4,7 +4,8 @@ const { useState, useEffect } = React;
 const { createRoot } = require('react-dom/client');
 
 const handleDomo = (e, onDomoAdded) => {
-
+    e.preventDefault();
+    helper.hideError();
 };
 
 const DomoForm = (props) => {
