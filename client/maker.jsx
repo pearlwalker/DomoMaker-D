@@ -78,7 +78,12 @@ const App = () => {
 
     return (
         <div>
-            
+            <div id="makeDomo">
+                
+            </div>
+            <div id="domos">
+
+            </div>
         </div>
     );
 };
